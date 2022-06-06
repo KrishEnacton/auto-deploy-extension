@@ -28,4 +28,5 @@ jobs:
     - name: Browser Platform Publish
       uses: PlasmoHQ/bpp@v2
       with:
+        artifact: build
         keys: ${{ secrets.LBP_KEYS }}
