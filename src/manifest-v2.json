@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "short_name": "LBP",
+  "name": "LBP",
+  "description": "LBP Description.",
+  "browser_action": {
+    "default_title": "LBP",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.bundle.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["contentScript.bundle.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "permissions": ["activeTab", "storage", "tabs", "http://*/*", "https://*/*"],
+  "web_accessible_resources": ["content.styles.css", "icon-128.png", "icon-34.png"]
+}

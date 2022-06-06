@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/plasmo-corp/bpp/v2/keys.schema.json",
+  "chrome": {
+    "clientId": "123",
+    "refreshToken": "789",
+    "extId": "abcd"
+  },
+  "firefox": {
+    "extId": "aaaaaaa-aaaa-bbbb-cccc-dddddddddddd",
+    "apiKey": "abcd",
+    "apiSecret": "efgh"
+  },
+  "edge": {
+    "clientId": "aaaaaaa-aaaa-bbbb-cccc-dddddddddddd",
+    "clientSecret": "abcdefg",
+    "productId": "aaaaaaa-aaaa-bbbb-cccc-dddddddddddd",
+    "accessTokenUrl": "https://login.microsoftonline.com/aaaaaaa-aaaa-bbbb-cccc-dddddddddddd/oauth2/v2.0/token"
+  }
+}
